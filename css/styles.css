@@ -1,0 +1,175 @@
+:root {
+  --preto: #0f0f0f;
+  --dourado: #c9a24d;
+  --branco: #ffffff;
+  --cinza: #b5b5b5;
+  --bg: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--preto);
+}
+
+header {
+  background: var(--preto);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: var(--branco);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.logo span {
+  color: var(--dourado);
+}
+
+header nav a {
+  color: var(--cinza);
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)),
+    url("https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg");
+  background-size: cover;
+  color: var(--branco);
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  color: var(--cinza);
+  margin: 15px 0;
+}
+
+.btn-cta {
+  background: var(--dourado);
+  color: var(--preto);
+  padding: 15px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.servicos {
+  background: var(--preto);
+  color: var(--branco);
+  padding: 60px 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 30px;
+  border-radius: 12px;
+  width: 230px;
+}
+
+.card span {
+  display: block;
+  color: var(--dourado);
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.destaque {
+  border: 2px solid var(--dourado);
+}
+
+.pacotes {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.pacotes .card {
+  background: var(--branco);
+}
+
+.pacotes a {
+  display: inline-block;
+  margin-top: 10px;
+  background: var(--preto);
+  color: var(--branco);
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.depoimentos {
+  background: var(--preto);
+  color: var(--branco);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.galeria {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galeria img {
+  width: 260px;
+  border-radius: 12px;
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+}
+
+footer {
+  background: var(--preto);
+  color: var(--cinza);
+  text-align: center;
+  padding: 30px;
+}
+
+.whatsapp-fixo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #25d366;
+  color: white;
+  padding: 15px 22px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+}
