@@ -16,6 +16,12 @@
 body {
   background: var(--bg);
   color: var(--preto);
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Header & Nav */
@@ -101,7 +107,8 @@ header {
 }
 
 .hero {
-  background: linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)),
+  background:
+    linear-gradient(rgba(15, 15, 15, 0.85), rgba(15, 15, 15, 0.85)),
     url("https://images.pexels.com/photos/1813272/pexels-photo-1813272.jpeg");
   background-size: cover;
   color: var(--branco);
@@ -239,8 +246,8 @@ footer {
     position: fixed;
     top: 0;
     right: -100%;
-    width: 280px;
-    max-width: 80vw;
+    width: 250px;
+    max-width: 70vw;
     height: 100vh;
     background: #1a1a1a;
     flex-direction: column;
