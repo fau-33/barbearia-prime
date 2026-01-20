@@ -145,6 +145,7 @@ header {
   background: var(--preto);
   color: var(--branco);
   padding: 60px 20px;
+  text-align: center;
 }
 
 .cards {
@@ -209,6 +210,10 @@ header {
 .galeria img {
   width: 260px;
   border-radius: 12px;
+}
+.mapa {
+  text-align: center;
+  padding: 60px 0;
 }
 
 .mapa iframe {
